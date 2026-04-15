@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 export const metadata: Metadata = {
   title: "The BurgerDudes — Premium Burgers • Fast Delivery | Fort Worth, TX",
@@ -22,7 +23,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <ScrollToTop />
+        {children}
+      </body>
     </html>
   );
 }
