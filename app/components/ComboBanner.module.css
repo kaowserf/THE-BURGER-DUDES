@@ -1,0 +1,241 @@
+.section {
+  padding: 6rem 0;
+  background: var(--charcoal);
+  position: relative;
+  overflow: hidden;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--red), transparent);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+/* Combo card */
+.comboCard {
+  position: relative;
+  background: linear-gradient(135deg, #1E0A0A 0%, #2A1010 50%, #1A1A1A 100%);
+  border: 1px solid rgba(192, 57, 43, 0.4);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: center;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.comboCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(192, 57, 43, 0.25);
+}
+
+.comboGlow {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 200px;
+  background: radial-gradient(ellipse, rgba(192, 57, 43, 0.3), transparent 70%);
+  pointer-events: none;
+}
+
+.comboTop {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.comboEmoji {
+  font-size: 1.8rem;
+}
+
+.comboTag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(240, 165, 0, 0.12);
+  border: 1px solid rgba(240, 165, 0, 0.35);
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+}
+
+.comboTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--white);
+  letter-spacing: 0.06em;
+  line-height: 1.1;
+}
+
+.comboPrice {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.comboPriceNum {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: var(--gold);
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+
+.comboPriceSub {
+  font-size: 0.9rem;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.comboDesc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--gray-light);
+  max-width: 320px;
+}
+
+.comboUpgrade {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--gray-light);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+}
+
+.comboUpgrade strong {
+  color: var(--gold);
+}
+
+.comboUpgradeIcon {
+  font-size: 1rem;
+}
+
+.comboBtn {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
+  padding: 0.8rem 2rem;
+  background: var(--red);
+  color: var(--white);
+  border-radius: 6px;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.comboBtn:hover {
+  background: var(--red-dark);
+  transform: scale(1.04);
+}
+
+/* Add-ons card */
+.addonsCard {
+  background: var(--charcoal-light);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.addonsCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(240, 165, 0, 0.25);
+}
+
+.addonsOverline {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.addonsTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
+  color: var(--white);
+}
+
+.addonsTitleAccent {
+  color: var(--red);
+}
+
+.addonsList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  flex: 1;
+}
+
+.addonItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  background: var(--charcoal-card);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.addonItem:hover {
+  border-color: rgba(240, 165, 0, 0.3);
+  transform: translateX(4px);
+}
+
+.addonDot {
+  width: 8px;
+  height: 8px;
+  background: var(--red);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.addonLabel {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--white);
+  flex: 1;
+}
+
+.addonPrice {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+}
+
+.addonsNote {
+  font-size: 0.82rem;
+  color: var(--gray);
+  font-style: italic;
+}
+
+@media (max-width: 860px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+}
