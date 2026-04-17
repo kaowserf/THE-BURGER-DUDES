@@ -88,8 +88,9 @@
   gap: 0.75rem;
 }
 
-.phoneBtn,
-.whatsappBtn {
+.primaryBtn,
+.doordashBtn,
+.ubereatsBtn {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,27 +104,33 @@
   text-decoration: none;
 }
 
-.phoneBtn:hover,
-.whatsappBtn:hover {
+.primaryBtn:hover,
+.doordashBtn:hover,
+.ubereatsBtn:hover {
   transform: scale(1.02);
   opacity: 0.92;
 }
 
-.phoneBtn {
+.primaryBtn {
   background: #C0392B;
   color: #FFFFFF;
 }
 
-.whatsappBtn {
-  background: #25D366;
+.doordashBtn {
+  background: #FF3008;
   color: #FFFFFF;
 }
 
-.number {
-  font-size: 0.85rem;
+.ubereatsBtn {
+  background: #142328;
+  color: #FFFFFF;
+}
+
+.sub {
+  font-size: 0.82rem;
   font-weight: 400;
-  letter-spacing: 0.06em;
-  opacity: 0.9;
+  letter-spacing: 0.04em;
+  opacity: 0.85;
 }
 
 @media (max-width: 480px) {

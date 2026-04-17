@@ -23,25 +23,38 @@ export default function OrderModal({ onClose }: OrderModalProps) {
         >
           ✕
         </button>
-        <div className={styles.icon}>📞</div>
-        <h3 className={styles.title}>We&apos;re Taking Orders!</h3>
+        <div className={styles.icon}>🍔</div>
+        <h3 className={styles.title}>Order Now!</h3>
         <p className={styles.text}>
-          Currently we are taking orders by <strong>phone call</strong> and{" "}
-          <strong>WhatsApp</strong> only.
+          Choose your preferred platform to place your order.
         </p>
         <div className={styles.actions}>
-          <a href="tel:+18317943865" className={styles.phoneBtn}>
-            📞 Call Us
-            <span className={styles.number}>+1 (831) 794-3865</span>
-          </a>
           <a
-            href="https://wa.me/18317943865"
+            href="https://fortworthfoodworks.com/s/the-burgerdudes/3004-cullen-st-fort-worth/8304d658-bc87-4e2e-b857-0cba76c9e677"
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.whatsappBtn}
+            className={styles.primaryBtn}
           >
-            💬 WhatsApp
-            <span className={styles.number}>+1 (831) 794-3865</span>
+            Order Online
+            <span className={styles.sub}>Fort Worth Food Works</span>
+          </a>
+          <a
+            href="https://www.doordash.com/store/the-burgerdudes-fort-worth-42568019/105536359/?cursor=eyJzZWFyY2hfaXRlbV9jYXJvdXNlbF9jdXJzb3IiOnsicXVlcnkiOiJCdXJnZXJzIiwiaXRlbV9pZHMiOls0NDEwMzU2OTQxMl0sInNlYXJjaF90ZXJtIjoiYnVyZ2VyIiwidmVydGljYWxfaWQiOi05OTksInZlcnRpY2FsX25hbWUiOiJhbGwiLCJxdWVyeV9pbnRlbnQiOiJGT09EX0NVSVNJTkUifSwic3RvcmVfcHJpbWFyeV92ZXJ0aWNhbF9pZHMiOlsxLDExMDA0NSw0XX0=&pickup=false"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.doordashBtn}
+          >
+            Order on DoorDash
+            <span className={styles.sub}>Fast delivery to your door</span>
+          </a>
+          <a
+            href="https://www.ubereats.com/store/the-burgerdudes3004-cullen-st/odVU0imbUTyq9xeEF6jaeg?diningMode=DELIVERY&ps=1&sc=SEARCH_SUGGESTION"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.ubereatsBtn}
+          >
+            Order on Uber Eats
+            <span className={styles.sub}>Delivered fresh & fast</span>
           </a>
         </div>
       </div>
