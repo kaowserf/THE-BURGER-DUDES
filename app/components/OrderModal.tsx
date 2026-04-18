@@ -39,7 +39,7 @@ export default function OrderModal({ onClose }: OrderModalProps) {
             <span className={styles.sub}>Fort Worth Food Works</span>
           </a>
           <a
-            href="https://www.doordash.com/store/the-burgerdudes-fort-worth-42568019/105536359/?cursor=eyJzZWFyY2hfaXRlbV9jYXJvdXNlbF9jdXJzb3IiOnsicXVlcnkiOiJCdXJnZXJzIiwiaXRlbV9pZHMiOls0NDEwMzU2OTQxMl0sInNlYXJjaF90ZXJtIjoiYnVyZ2VyIiwidmVydGljYWxfaWQiOi05OTksInZlcnRpY2FsX25hbWUiOiJhbGwiLCJxdWVyeV9pbnRlbnQiOiJGT09EX0NVSVNJTkUifSwic3RvcmVfcHJpbWFyeV92ZXJ0aWNhbF9pZHMiOlsxLDExMDA0NSw0XX0=&pickup=false"
+            href="https://www.doordash.com/store/the-burgerdudes-fort-worth-42568019/105536359/?event_type=autocomplete&pickup=false"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.doordashBtn}
