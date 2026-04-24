@@ -6,6 +6,16 @@ interface OrderModalProps {
   onClose: () => void;
 }
 
+function fireConversion() {
+  if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
+    (window as any).gtag("event", "conversion", {
+      send_to: "AW-17869738192/0FHmCPWj4qEcENCh-shC",
+      value: 1.0,
+      currency: "USD",
+    });
+  }
+}
+
 export default function OrderModal({ onClose }: OrderModalProps) {
   return (
     <div
@@ -34,6 +44,7 @@ export default function OrderModal({ onClose }: OrderModalProps) {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.primaryBtn}
+            onClick={fireConversion}
           >
             Order Online
             <span className={styles.sub}>Fort Worth Food Works</span>
@@ -43,6 +54,7 @@ export default function OrderModal({ onClose }: OrderModalProps) {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.doordashBtn}
+            onClick={fireConversion}
           >
             Order on DoorDash
             <span className={styles.sub}>Fast delivery to your door</span>
@@ -52,6 +64,7 @@ export default function OrderModal({ onClose }: OrderModalProps) {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.ubereatsBtn}
+            onClick={fireConversion}
           >
             Order on Uber Eats
             <span className={styles.sub}>Delivered fresh & fast</span>
