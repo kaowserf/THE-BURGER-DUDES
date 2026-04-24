@@ -28,80 +28,107 @@ export const menuCategories: MenuCategory[] = [
     items: [
       {
         name: "Classic BurgerDude",
-        price: "$12.99",
+        price: "$13.99",
         description: "1/2 lb beef patty, American cheese, crisp lettuce, vine-ripened tomato, red onion, pickles, secret BurgerDudes sauce",
         badges: [
           { label: "Signature", type: "gold" },
           { label: "Most Popular", type: "orange" },
         ],
-        image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80&auto=format&fit=crop",
+        image: "https://i.ibb.co.com/TMkgc699/Classic-Burger-Dude.jpg",
       },
       {
         name: "Double Dude Deluxe",
         price: "$16.99",
         description: "Two 1/2 lb beef patties, double American cheese, bacon, grilled onions, signature sauce",
         badges: [{ label: "Fan Favorite", type: "orange" }],
-        image: "https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&q=80&auto=format&fit=crop",
+        image: "https://i.ibb.co.com/RTK5cZj0/Double-Dude-Deluxe.jpg",
       },
       {
         name: "BBQ Bacon Blitz",
-        price: "$14.99",
+        price: "$15.99",
         description: "Beef patty, smoky BBQ sauce, crispy bacon, sharp cheddar, beer-battered onion rings",
         badges: [{ label: "Bestseller", type: "orange" }],
-        image: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&q=80&auto=format&fit=crop",
+        image: "https://i.ibb.co.com/DfyWhhQL/BBQ-Bacon-Blitz.jpg",
       },
       {
         name: "Mushroom Swiss Dude",
-        price: "$13.99",
+        price: "$14.99",
         description: "Beef patty, sautéed mushrooms, melted Swiss cheese, caramelized onions, creamy garlic aioli",
         badges: [],
-        image: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&q=80&auto=format&fit=crop",
+        image: "https://i.ibb.co.com/jPmHKs5G/3d8cd01e-66ff-4112-a915-d740e50ac0c3.jpg",
       },
-      {
-        name: "Jalapeño Popper Dude",
-        price: "$14.49",
-        description: "Spicy beef patty, pepper jack cheese, fresh jalapeños, crispy bacon, cream cheese spread, chipotle mayo",
-        badges: [
-          { label: "Spicy", type: "red" },
-          { label: "New", type: "green" },
-        ],
-        image: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&q=80&auto=format&fit=crop",
-      },
+      
       {
         name: "California Avocado Dude",
-        price: "$14.99",
+        price: "$17.99",
         description: "Beef patty, creamy avocado slices, crispy bacon, pepper jack cheese, spring mix, ranch dressing",
         badges: [],
-        image: "https://images.unsplash.com/photo-1586816001966-79b736744398?w=400&q=80&auto=format&fit=crop",
+        image: "https://i.ibb.co.com/ZzqfthdQ/a45d9f5d-c08a-4d4e-9625-3280ad8210a5.jpg",
       },
       {
-        name: "Breakfast Dude",
-        price: "$15.49",
-        description: "Beef patty, fried egg, crispy bacon, American cheese, hash brown patty, maple aioli — Available all day!",
+        name: "The Fort Worth Philly Cheesesteak",
+        price: "$14.99",
+        description: "Thinly sliced ribeye steak, grilled onions, and melted Cheez Whiz on a toasted hoagie. The original!",
         badges: [{ label: "New", type: "green" }],
-        image: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=400&q=80&auto=format&fit=crop",
+        image: "https://photos.tryotter.com/cdn-cgi/image/fit=crop,width=984,height=534,quality=60,format=auto/menu-photos/b9d061ae-4cda-48fb-b117-8899189b4158.jpeg",
       },
       {
-        name: "Blue Cheese Bacon Dude",
-        price: "$15.99",
-        description: "Beef patty, tangy blue cheese crumbles, thick-cut bacon, arugula, caramelized onions, balsamic reduction",
-        badges: [],
-        image: "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=400&q=80&auto=format&fit=crop",
-      },
-      {
-        name: "Patty Melt Dude",
+        name: "Classic Hot Link",
         price: "$13.99",
-        description: "Beef patty, Swiss & American cheese, grilled onions on buttery toasted rye bread",
+        description: "Grilled spicy beef hot link with mustard, grilled onions, and pickles on a toasted hoagie roll",
         badges: [],
-        image: "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=400&q=80&auto=format&fit=crop",
+        image: "https://photos.tryotter.com/cdn-cgi/image/fit=crop,width=984,height=534,quality=60,format=auto/menu-photos/99cc18cd-45db-4294-b2d6-ebafff20bbfc.jpeg",
       },
       {
-        name: "Truffle Burger Dude",
-        price: "$16.99",
-        description: "Gourmet beef patty, Gruyere cheese, arugula, roasted garlic aioli, truffle oil",
-        badges: [{ label: "Premium", type: "gold" }],
-        image: "https://images.unsplash.com/photo-1550317138-10000687a72b?w=400&q=80&auto=format&fit=crop",
+        name: "Loaded Hot Link",
+        price: "$14.99",
+        description: "Two hot links topped with steak, shredded cheddar cheese, diced onions, and jalapeños on a fresh roll",
+        badges: [],
+        image: "https://photos.tryotter.com/cdn-cgi/image/fit=crop,width=984,height=534,quality=60,format=auto/menu-photos/0b22882f-617a-4c28-8073-521df97c7274.jpeg",
       },
+      {
+        name: "BBQ Hot Link",
+        price: "$13.99",
+        description: "Grilled hot link smothered in smoky BBQ sauce, topped with coleslaw and crispy onion straws",
+        badges: [{ label: "Premium", type: "gold" }],
+        image: "https://i.ibb.co.com/5WCxwDDS/Hot-chorizo-links.jpg",
+      },
+      {
+        name: "Loaded Fries",
+        price: "$14.99",
+        description: "Cheese sauce, bacon, green onions",
+        badges: [{ label: "Premium", type: "gold" }],
+        image: "https://photos.tryotter.com/cdn-cgi/image/fit=crop,width=984,height=534,quality=60,format=auto/menu-photos/8134c752-83dc-4a2f-8638-ce18f759cba2.jpeg",
+      },
+
+       {
+        name: "Pepsi",
+        price: "$1.99",
+        description: "Enjoy with food, Best deal",
+        badges: [{ label: "Premium", type: "gold" }],
+        image: "https://photos.tryotter.com/cdn-cgi/image/fit=crop,width=984,height=534,quality=60,format=auto/menu-photos/d15f69cf-309a-4a50-9678-7efc23a5334b.jpeg",
+      },
+
+      {
+        name: "Sprite",
+        price: "$1.99",
+        description: "Enjoy with food, Best deal",
+        badges: [{ label: "Premium", type: "gold" }],
+        image: "https://photos.tryotter.com/cdn-cgi/image/fit=crop,width=984,height=534,quality=60,format=auto/menu-photos/b1effaad-38ae-45f4-89ab-7bdf97fd446b.jpeg",
+      },
+
+
+      {
+        name: "Strawberry",
+        price: "$1.99",
+        description: "Enjoy with food, Strawberry Fanta",
+        badges: [{ label: "Premium", type: "gold" }],
+        image: "https://photos.tryotter.com/cdn-cgi/image/fit=crop,width=984,height=534,quality=60,format=auto/menu-photos/184727f4-f7dd-4ed7-8af2-789aa3175136.jpeg",
+      },
+
+
+
+
     ],
   },
   {
