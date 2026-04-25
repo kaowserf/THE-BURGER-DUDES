@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   title: "The BurgerDudes — Premium Burgers • Fast Delivery | Fort Worth, TX",
   description:
     "The BurgerDudes — Fort Worth's boldest burger joint. Premium burgers, Philly cheesesteaks, fried chicken, and more. Order via UberEats, DoorDash, or Grubhub.",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
